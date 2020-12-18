@@ -1,0 +1,138 @@
+/*font-family: 'Lato', sans-serif;*/
+
+
+
+/* GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+}
+
+section{
+    height: 100vh;
+}
+
+
+/*HEADER*/
+
+
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E1E1E;
+    width: 100vw;
+    height: 8vh;
+    border-bottom: 3px solid #fff;
+}
+
+header input{
+    display: none;
+}
+
+header .burger-container{
+    margin-left: 20px;
+}
+
+
+header .burger-layer{
+    margin: 3px;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+}
+
+header img{
+    max-height: 90%;
+    margin-right: 10px;
+}
+
+
+/* MOBILE NAV*/
+nav{
+    display: none;
+    width: 100%;
+    height: 200px;
+    background-color: #333333;
+    border-bottom: 3px solid #fff;
+}
+
+nav ul{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul .menu-link{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 20%;
+    background-color: #616161;
+}
+
+nav ul .menu-link li{
+    list-style: none;
+}
+
+nav ul .menu-link li a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*WELCOME SECTION*/
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome img{
+    margin-top: 20%;
+    margin-bottom: 40%;
+}
+
+.welcome button{
+    width: 40%;
+    height: 5%;
+    cursor: pointer;
+    color: #fff;
+    background-color: #C0201B;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.welcome button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #C0201B;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.welcome-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textbox{
+    margin: 30px;
+}
