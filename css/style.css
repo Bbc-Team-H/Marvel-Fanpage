@@ -51,13 +51,15 @@ header .burger-layer{
 }
 
 header img{
-    max-height: 90%;
-    margin-right: 10px;
+    max-height: 65%;
+    margin-right: 15px;
 }
 
 
 /* MOBILE NAV*/
 nav{
+    margin-top: 8vh;
+    position: fixed;
     display: none;
     width: 100%;
     height: 200px;
@@ -103,7 +105,8 @@ nav ul .menu-link li a{
 }
 
 .welcome img{
-    margin-top: 20%;
+    max-width: 90vw;
+    margin-top: 35%;
     margin-bottom: 40%;
 }
 
@@ -116,6 +119,14 @@ nav ul .menu-link li a{
     border: none;
     border-radius: 0.5rem;
     outline: none;
+}
+
+.welcome .readmore-btn a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
 }
 
 .welcome button:hover{
