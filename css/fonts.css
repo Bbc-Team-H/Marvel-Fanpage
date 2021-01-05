@@ -1,11 +1,17 @@
+:root{
+    font-size: 24px;
+}
+
 h1{
     color: #fff;
     font-family: 'Lato', sans-serif;
+    font-size: 2rem;
 }
 
 h2{
     color: #C0201B;
     font-family: 'Lato', sans-serif;
+    font-size: 1rem;
 }
 
 h3{
@@ -13,7 +19,14 @@ h3{
     font-family: 'Lato', sans-serif;
 }
 
+h4{
+    color: #C0201B;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+}
+
 p{
     color: #fff;
     font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
 }

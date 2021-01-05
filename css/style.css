@@ -1,8 +1,17 @@
-/*font-family: 'Lato', sans-serif;*/
+/* 
+------------------------------
+HTML/CSS By  
+ ________  ___  ________  ________           ________     
+|\   ____\|\  \|\   __  \|\   ___  \        |\   __  \    
+\ \  \___|\ \  \ \  \|\  \ \  \\ \  \       \ \  \|\  \   
+ \ \  \  __\ \  \ \   __  \ \  \\ \  \       \ \   _  _\  
+  \ \  \|\  \ \  \ \  \ \  \ \  \\ \  \       \ \  \\  \| 
+   \ \_______\ \__\ \__\ \__\ \__\\ \__\       \ \__\\ _\ 
+    \|_______|\|__|\|__|\|__|\|__| \|__|        \|__|\|__|
+------------------------------
+*/
 
-
-
-/* GENERAL*/
+/* ---> General <---*/
 *{
     margin: 0;
     padding: 0;
@@ -12,17 +21,40 @@ body{
     margin: 0;
     padding: 0;
     background-color: #262626;
+    overflow: inherit;
 }
 
 section{
-    height: 100vh;
+    min-height: 100vh;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #616161; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8C1814; ; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #C0201B;
+    width: 30px;
+    border-radius: 5px;
+}
 
 /*HEADER*/
 
 
 header{
+    box-shadow: 5px 5px 8px;
+    top: 0;
+    z-index: 2;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -30,7 +62,7 @@ header{
     align-items: center;
     background-color: #1E1E1E;
     width: 100vw;
-    height: 8vh;
+    height: 70px;
     border-bottom: 3px solid #fff;
 }
 
@@ -40,8 +72,12 @@ header input{
 
 header .burger-container{
     margin-left: 20px;
+    transition-duration: 0.4s;
 }
 
+header .burger-container:active{
+    transform: rotate(45deg);
+}
 
 header .burger-layer{
     margin: 3px;
@@ -51,21 +87,27 @@ header .burger-layer{
 }
 
 header img{
-    max-height: 90%;
-    margin-right: 10px;
+    transition-duration: 0.4s;
+    max-height: 60%;
+    margin-right: 20px;
 }
 
 
-/* MOBILE NAV*/
-nav{
+/* ---> Mobile Nav <---*/
+
+#mobile-container{
+    box-shadow: 0px 5px 8px;
     display: none;
+    z-index: 1;
+    margin-top: 70px;
+    position: fixed;
     width: 100%;
-    height: 200px;
+    height: 220px;
     background-color: #333333;
     border-bottom: 3px solid #fff;
 }
 
-nav ul{
+#mobile-container ul{
     padding-top: 10px;
     display: flex;
     flex-direction: column;
@@ -73,8 +115,9 @@ nav ul{
     width: 100%;
 }
 
-nav ul .menu-link{
+#mobile-container ul .menu-link{
     margin-top: 10px;
+    padding: 10px 0;
     display: flex;
     align-items: center;
     width: 95%;
@@ -82,11 +125,14 @@ nav ul .menu-link{
     background-color: #616161;
 }
 
-nav ul .menu-link li{
+
+#mobile-container ul .menu-link li{
     list-style: none;
 }
 
-nav ul .menu-link li a{
+
+
+#mobile-container ul .menu-link li a{
     margin: 0 10px;
     text-decoration: none;
     color: #fff;
@@ -94,37 +140,59 @@ nav ul .menu-link li a{
 }
 
 
-/*WELCOME SECTION*/
+
+/* ---> Homepage Mobile <---*/
 
 .welcome{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .welcome img{
-    margin-top: 20%;
-    margin-bottom: 40%;
+    max-width: 80%;
+    margin-bottom: 10vh;
+    transition-duration: 0.4s ;
+    -webkit-transition: 0.4s;
 }
+
 
 .welcome button{
-    width: 40%;
-    height: 5%;
-    cursor: pointer;
+    position: relative;
+    width: 180px;
+    height: 50px;
+    font-size:20px;
+    text-decoration: none;
     color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition: 0.4s;
+    font-style: none;
     background-color: #C0201B;
     border: none;
     border-radius: 0.5rem;
-    outline: none;
 }
 
-.welcome button:hover{
-    cursor: pointer;
-    color: #fff;
-    background-color: #C0201B;
-    border: none;
-    border-radius: 0.5rem;
-    outline: none;
+.welcome button:after{
+    content: "";
+    background: #8C1814;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+
+.welcome button:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }
 
 .welcome-text{
@@ -133,6 +201,272 @@ nav ul .menu-link li a{
     justify-content: center;
 }
 
+.explanation{
+    margin-top: 50px;
+}
+
+
 .textbox{
     margin: 30px;
+}
+
+@media only screen and (max-width: 650px) {
+    .desktop-container{
+        display: none;
+    }
+}
+/* ---> Homepage Desktop (+ Desktop Nav) <---*/
+@media only screen and (min-width: 650px) {
+    
+    header{
+        width: 100%;
+    }
+
+    header .burger-container{
+        display: none;
+
+    }
+
+    #mobile-container{
+        display: none;
+    }
+
+    .desktop-container{
+        display: block;
+        z-index: 1;
+        margin-left: 20px;
+    }
+
+    .desktop-container li{
+        list-style-type: none;
+        float: left;
+        margin: 10px
+        
+    }
+
+    .desktop-container ul li a {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        font-family: "Lato";
+        color: #ecf0f1;
+        text-transform: uppercase;
+        padding: 4px 0;
+        transition: 0.5s;
+    }
+
+    .desktop-container ul li a::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        top: 100%;
+        left: 0;
+        background: #C0201B;
+        transition: transform 0.3s;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    .desktop-container a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .desktop-container li a:hover {
+        color: #616161;
+      }
+    .desktop-container ul li a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+
+    .welcome img{
+        transition-duration: 0.4s;
+        width: 600px;
+    }
+
+    .welcome img:hover{
+        width: 650px;
+    }
+
+    .welcome button:hover{
+        background-color: #8C1814 ;
+    }
+    .welcome-text{
+        display: grid;
+        grid-template-rows: 50% 50%;
+    }
+    .welcome-text {}
+}
+
+
+/* ---> Characters Overview <---*/
+.characters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.characters h1{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.thumbnail h3 a{
+    font-style: underline;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.thumbnail h3 a:hover{
+    color: #C0201B;
+}
+
+.thumbnails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thumbnail{
+    transition-duration: 0.2s;
+    margin-top: 20px;
+    box-shadow: 4px 4px 10px;
+    background-color: #333333;
+    border-color: #616161;
+    border-width: 2px;
+    border-style: solid;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.thumbnail:hover{
+    margin-top: 25px;
+    box-shadow: 5px 5px 10px;
+}
+
+.thumbnail .top{
+    display: flex;
+    margin: 10px;
+}
+
+.thumbnail .top .content{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.thumbnail .stars{
+    align-self: baseline;
+}
+
+.thumbnail .star{
+    width: 15px;
+}
+
+.thumbnail .picture{
+    max-width: 40%;
+    min-width: 140px;
+    border-radius: 10px;
+}
+.thumbnail .bottom{
+    margin: 30px 10px;
+}
+
+@media only screen and (max-width: 1299){
+    .thumbnail{
+        height: 50%;
+    }
+}
+
+@media only screen and (min-width: 690px){
+    
+    .thumbnail{
+        margin: 30px;
+        width: 50%;
+    }
+
+    .thumbnail .picture{
+        max-width: 200px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .thumbnails{
+        display: flex;
+        flex-direction: row;
+    }
+    .thumbnail{
+        height: 320px;
+        margin: 30px;
+        width: 30%;
+    }
+
+    .thumbnail:hover{
+        width: 30%;
+    }
+
+    .thumbnail .picture{
+        max-width: 200px;
+    }
+}
+
+/* ---> Character Profile <---*/
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profile h3{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.profile .poster{
+    display: flex;
+    margin: 30px;
+}
+
+.profile .poster img{
+    width: 50%;
+}
+
+.profile .poster ul{
+    margin: 10px;
+}
+
+.profile .poster ul li{
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #C0201B;
+}
+
+.profile p{
+    margin: 0 30px;
+}
+
+@media only screen and (min-width: 650px){
+
+    .profile .poster{
+    }
+    .profile .poster img{
+        width: 20%;
+        border-radius: 10px;
+    }
+    
+    .profile p{
+        width: 50%;
+    }
+}
+
+/* ---> Impressum <---*/
+
+.impressum h1{
+    margin-top: 100px;
+    margin-left: 30px
 }
