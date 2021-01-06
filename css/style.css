@@ -438,6 +438,13 @@ header img {
     border-radius: 10px;
 }
 
+@media (max-width: 415px) {
+    .profile .poster img {
+        width: 55%;
+        border-radius: 10px;
+    }
+}
+
 .profile .poster ul {
     margin: 10px;
 }
@@ -460,7 +467,7 @@ header img {
 
 .profile .stars{
     display: flex;
-    width: 50px;
+    width: 40px;
 }
 
 
@@ -572,6 +579,7 @@ header img {
 /* Contact */
 
 .contact{
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
