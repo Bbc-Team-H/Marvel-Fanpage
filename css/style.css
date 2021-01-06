@@ -494,6 +494,19 @@ header img {
     height: 100%;
 }
 
+@media only screen and (max-width: 450px) {
+    .profile .poster{
+        flex-direction: column;
+    }
+    .profile .poster img{
+        width: 75%;
+    }
+
+    .profile .poster ul {
+        margin-left: 0;
+    }
+    
+}
 
 @media only screen and (min-width: 700px) {
 
