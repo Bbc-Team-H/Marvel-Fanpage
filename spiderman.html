@@ -1,74 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/fonts.css" rel="stylesheet">
-        <title>Marvel Fanpage</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="img/icon.png">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
 
-    </head>
+<head>
 
-    <!--CONTENT-->
-    <body>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <title>Marvel Fanpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
 
-        <!-- >>> MOBILE MENU <<< -->
-        <div class="menu">
-            
-            <!--Header container-->
-            <header>
-                <div class="burger-container" id="burger-button">
-                    <label for="burger">
-                        <div id="burger-layer" class="burger-layer"></div>
-                        <div id="burger-layer" class="burger-layer"></div>
-                        <div id="burger-layer" class="burger-layer"></div>
-                    </label>
-                </div>
+</head>
 
-                <!-- Desktop Container-->
-                <nav id="desktop-container" class="desktop-container">
-                    <ul>
-                        <li><a href="index.html">Homepage</a></li>
-                        <li><a href="characters.html">Best Characters</a></li>
-                        <li><a href="impressum.html">Impressum</a></li>
-                    </ul>  
-                </nav>
+<!--CONTENT-->
 
-                <img src="img/icon.png">
-            </header>
-            
-            <!-- Navigation container-->
-            <nav id="mobile-container">
+<body>
+
+    <!-- >>> MOBILE MENU <<< -->
+    <!-- >>> MOBILE MENU <<< -->
+    <div class="menu">
+
+        <!--Header container-->
+        <header>
+            <div class="burger-container" id="burger-button">
+                <div class="burger-layer"></div>
+                <div class="burger-layer"></div>
+                <div class="burger-layer"></div>
+            </div>
+
+            <!-- Desktop Container-->
+            <nav id="desktop-container" class="desktop-container">
                 <ul>
-                    <div class="menu-link"><li><a href="index.html">Homepage</a></li></div>
-                    <div class="menu-link"><li><a href="characters.html">Best Characters</a></li></div>
-                    <div class="menu-link"><li><a href="impressum.html">Impressum</a></li></div>
-                </ul>  
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
             </nav>
-        
-        
+
+            <img src="img/icon.png" alt="icon">
+        </header>
+
+        <!-- Navigation container-->
+        <nav id="mobile-container">
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+
+
+    </div>
+
+    <!-- >>> LANDING PAGE <<< -->
+    <section class="profile">
+
+        <h1>Spiderman</h1>
+        <div class="poster">
+            <img class="profile-pic" src="img/spiderman.jpg">
+            <ul>
+                <li>Real name: Peter Parker</li>
+                <li>Actor: Tobey Maguire, Tom Holland</li>
+                <li>Age: 45 years / 24 years</li>
+                <li class="stars">
+                    <img class="star" alt="star" src="img/star_active.png">
+                    <img class="star" alt="star" src="img/star_active.png">
+                    <img class="star" alt="star" src="img/star_active.png">
+                    <img class="star" alt="star" src="img/star_active.png">
+                    <img class="star" alt="star" src="img/star.png">
+                </li>
+            </ul>
+        </div>
+        <div class="information">
+            <h3>Background</h3>
+            <p>After getting bit by a radioactive spider, 15-year-old Peter Parker discovered that he got super
+                strength, speed, agility, and a spider-sense. After seeing an advertisement, he decided to test his
+                powers on a wrestler. Peter easily defeated the wrestler and got the money he was promised. After that,
+                Peter designed a device that can shoot webs, which he called "web-shooters" and a new costume. Peter,
+                who now called himself Spider-Man, was an immediate hit. Once, after a show, he encountered a burglar.
+                Instead of stopping him, Peter decided to let him go. The police officer that was chasing after him
+                remanded Peter. However, he just says that it was not his problem.</p>
+            <p>Later, he was heading home, he saw that his house was surrounded by police. When he asked a police
+                officer, he was informed that his uncle Ben was killed by a burglar and that the burglar was currently
+                being surround in a warehouse.</p>
+            <p>Quickly donning his costume, Spider-Man went to the warehouse with revenge in his mind. When he caught
+                the burglar, he looked at the burglar. He quickly realized that it was the same person he should have
+                stopped. From that day on, Peter decided to use his powers to fight crime.</p>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/5dZVluJh8QI" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
 
-        <!-- >>> LANDING PAGE <<< -->
-        <section class="profile">
+    </section>
 
-            <h3>Spiderman</h3>
-            <div class="poster">
-                <img class="profile-pic" src="img/ref_img_1.jpg">
-                    <ul>
-                        <li>Info 1</li>
-                        <li>Info 2</li>
-                        <li>Info 3</li>
-                    </ul>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+    <footer>
+        <div class="left-footer">
+            <p class="footer-text">by Gian Rüegsegger</p>
+            <p class="footer-text">Copyright 2020</p>
+        </div>
+        <div class="middle-footer">
+            <p class="footer-text">Marvel Fanpage</p>
+        </div>
+        <div class="right-footer">
+            <p class="footer-text"><a href="impressum.html">Copyright Info</a></p>
+            <p class="footer-text"><a href="https://github.com/xgiaenuuu">Github</a></p>
+        </div>
 
-        </section>
-        
-        <script src="scripts/navigation.js"></script>
-    </body>
+    </footer>
+
+    <script src="scripts/navigation.js"></script>
+</body>

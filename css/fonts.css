@@ -1,32 +1,41 @@
-:root{
+:root {
     font-size: 24px;
 }
 
-h1{
+h1 {
     color: #fff;
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
 }
 
-h2{
+h2 {
     color: #C0201B;
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
 }
 
-h3{
+h3 {
     color: #fff;
     font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
 }
 
-h4{
+h4 {
     color: #C0201B;
     font-family: 'Lato', sans-serif;
     font-size: 0.8rem;
 }
 
-p{
+p {
     color: #fff;
     font-family: 'Lato', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
+
+.footer-text{
+    font-size: 0.6rem;
+} 
+
+.footer-text a{
+    color: #fff;
+} 

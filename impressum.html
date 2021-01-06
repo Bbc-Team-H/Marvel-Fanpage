@@ -1,72 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/fonts.css" rel="stylesheet">
-        <title>Marvel Fanpage</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="img/icon.png">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
 
-    </head>
+<head>
 
-    <!--CONTENT-->
-    <body>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <title>Marvel Fanpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
 
-        <!-- >>> MOBILE MENU <<< -->
-        <div class="menu">
-            
-            <!--Header container-->
-            <header>
-                <div class="burger-container" id="burger-button">
-                    <label for="burger">
-                        <div id="burger-layer" class="burger-layer"></div>
-                        <div id="burger-layer" class="burger-layer"></div>
-                        <div id="burger-layer" class="burger-layer"></div>
-                    </label>
-                </div>
+</head>
 
-                <!-- Desktop Container-->
-                <nav id="desktop-container" class="desktop-container">
-                    <ul>
-                        <li><a href="index.html">Homepage</a></li>
-                        <li><a href="characters.html">Best Characters</a></li>
-                        <li><a href="impressum.html">Impressum</a></li>
-                    </ul>  
-                </nav>
+<!--CONTENT-->
 
-                <img src="img/icon.png">
-            </header>
-            
-            <!-- Navigation container-->
-            <nav id="mobile-container">
+<body>
+
+    <!-- >>> MOBILE MENU <<< -->
+    <!-- >>> MOBILE MENU <<< -->
+    <div class="menu">
+
+        <!--Header container-->
+        <header>
+            <div class="burger-container" id="burger-button">
+                <div class="burger-layer"></div>
+                <div class="burger-layer"></div>
+                <div class="burger-layer"></div>
+            </div>
+
+            <!-- Desktop Container-->
+            <nav id="desktop-container" class="desktop-container">
                 <ul>
-                    <div class="menu-link"><li><a href="index.html">Homepage</a></li></div>
-                    <div class="menu-link"><li><a href="characters.html">Best Characters</a></li></div>
-                    <div class="menu-link"><li><a href="impressum.html">Impressum</a></li></div>
-                </ul>  
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
             </nav>
-        
-        
+
+            <img src="img/icon.png" alt="icon">
+        </header>
+
+        <!-- Navigation container-->
+        <nav id="mobile-container">
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+
+
+    </div>
+
+    <!-- >>> LANDING PAGE <<< -->
+    <section class="copyright">
+
+        <div class="text">
+            <h1>Impressum</h1>
+            
+            <h2>Bilder und Icons</h2>
+            <p>Stern Icons created by <a href="https://www.flaticon.com/de/autoren/freepik" title="Freepik">Freepik</a>from <a href="https://www.flaticon.com/de/" title="Flaticon">Flaticon</a></p>
+            <p>Deadpool Picture from <a href="https://www.theguardian.com/film/2020/feb/27/can-taika-waititi-get-deadpool-to-grow-up-and-join-the-marvel-gang" title="theguardian.com">Theguardian</a></p>
+            <p>Ironman Picture from <a href="https://www.britannica.com/topic/Iron-Man-comic-book-character"title="britannica.com">Britannica</a></p>
+            <p>Spiderman Picture from <a href="https://www.pinterest.dk/pin/673921531714185167/" title="pinterest.dk">Pinterest</a></p>
+            
+            <h2>Texts</h2>
+            <p>All Profile texts from <a href="https://characterprofile.fandom.com/" title="fandom.com">Fandom</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="left-footer">
+            <p class="footer-text">by Gian Rüegsegger</p>
+            <p class="footer-text">Copyright 2020</p>
+        </div>
+        <div class="middle-footer">
+            <p class="footer-text">Marvel Fanpage</p>
+        </div>
+        <div class="right-footer">
+            <p class="footer-text"><a href="impressum.html">Copyright Info</a></p>
+            <p class="footer-text"><a href="https://github.com/xgiaenuuu">Github</a></p>
         </div>
 
-        <!-- >>> LANDING PAGE <<< -->
-        <section class="impressum">
-            <h1>Impressum</h1>
-        </section>
-
-        <script src="scripts/navigation.js"></script>
-    </body>
-    <!--CONTENT END-->
-    
-
-    <!--FOOTER-->
-    <footer>
-
     </footer>
-    <!--FOOTER END-->
+
+    <script src="scripts/navigation.js"></script>
+</body>
+<!--CONTENT END-->
+
+
+
 </html>
