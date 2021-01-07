@@ -340,10 +340,7 @@ header img {
     border-radius: 10px;
 }
 
-.thumbnail:hover {
-    margin-top: 25px;
-    box-shadow: 5px 5px 10px;
-}
+
 
 .thumbnail .top {
     display: flex;
@@ -389,6 +386,11 @@ header img {
         width: 50%;
     }
 
+    .thumbnail:hover {
+        margin-top: 25px;
+        box-shadow: 5px 5px 10px;
+    }
+
     .thumbnail .picture {
         max-width: 200px;
     }
@@ -401,7 +403,7 @@ header img {
     }
 
     .thumbnail {
-        height: 380px;
+        height: 50%;
         margin: 30px;
         width: 30%;
     }
