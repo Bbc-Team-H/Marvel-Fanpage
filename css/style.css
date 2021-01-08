@@ -49,6 +49,10 @@ section {
     border-radius: 5px;
 }
 
+iframe{
+    border: none;
+}
+
 /*HEADER*/
 
 
@@ -612,6 +616,7 @@ header img {
     width: 90%;
     height: 300px;
     margin-top: 30px;
+    border: none;
 }
 
 @media only screen and (min-width: 720px) {
