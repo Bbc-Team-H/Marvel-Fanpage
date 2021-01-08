@@ -8,3 +8,8 @@ function MenuOpen() {
 }
 
 document.getElementById("burger-button").addEventListener("click", MenuOpen)
+
+
+function Thumbnail(page){
+  window.open(page, "_self"); 
+}
