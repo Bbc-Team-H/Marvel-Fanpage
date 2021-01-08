@@ -209,6 +209,7 @@ header img {
     .desktop-container {
         display: none;
     }
+    
 }
 
 /* ---> Homepage Desktop (+ Desktop Nav) <---*/
@@ -291,6 +292,7 @@ header img {
     }
 
     .welcome-text {
+        margin: 0 10%;
         display: grid;
         grid-template-rows: 50% 50%;
     }
